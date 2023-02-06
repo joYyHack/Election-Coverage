@@ -1,20 +1,7 @@
-import { USElection__factory } from "./../typechain-types/factories/Election.sol/USElection__factory";
 import { USElection } from "./../typechain-types/Election.sol/USElection";
 import { expect } from "chai";
 import { ethers } from "hardhat";
-import {
-  BaseContract,
-  BigNumber,
-  BigNumberish,
-  BytesLike,
-  CallOverrides,
-  ContractTransaction,
-  Overrides,
-  PopulatedTransaction,
-  Signer,
-  utils,
-} from "ethers";
-import { PromiseOrValue } from "../typechain-types/common";
+import { Signer } from "ethers";
 describe("USElection", function () {
   let usElectionFactory;
   let usElection: USElection;
